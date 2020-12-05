@@ -9,7 +9,7 @@ import 'package:E_Companion/components/rounded_input_field.dart';
 import 'package:E_Companion/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:E_Companion/Screens/Home/home_screen.dart';
+import 'package:E_Companion/HomeScreen/HomeScreen.dart';
 
 class Body extends StatefulWidget {
   static String id='registration_screen';
