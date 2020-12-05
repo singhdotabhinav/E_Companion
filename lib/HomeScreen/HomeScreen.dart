@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
 
-  int _currentIndex=0;
+  int _currentIndex=2;
 
 
 
@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
         ),
       ),
-      body:_currentIndex==2?ChatPage():_currentIndex==1?Courses():Quiz(),
+      body:_currentIndex==2?ChatPage():_currentIndex==0?Courses():Quiz(),
       //body: if(_currentIndex==2){}
 
       bottomNavigationBar: CurvedNavigationBar(

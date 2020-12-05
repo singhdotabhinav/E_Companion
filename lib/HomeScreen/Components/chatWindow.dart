@@ -64,7 +64,7 @@ class _ChatPageState extends State<ChatPage> {
 
             Divider(
               height: 5.0,
-              color: Colors.greenAccent,
+              color: kPrimaryLightColor,
             ),
             Container(
 
@@ -168,7 +168,7 @@ class _ChatPageState extends State<ChatPage> {
         padding: EdgeInsets.all(10.0),
         child: Bubble(
             radius: Radius.circular(15.0),
-            color: data == 0 ? Color.fromRGBO(23, 157, 139, 1) : Colors.orangeAccent,
+            color: data == 0 ? Color.fromRGBO(23, 157, 139, 1) : kPrimaryColor,
             elevation: 0.0,
 
             child: Padding(
