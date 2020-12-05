@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214550381727",
+    "project_id": "ecompanion-29d63",
+    "storage_bucket": "ecompanion-29d63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214550381727:android:25e4f529b034ad752c8eaa",
+        "android_client_info": {
+          "package_name": "com.tejashreer.ecompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214550381727-l0jv9395078blqjl4jmqqt3r85v6rf70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAkWa0fveII0KcROKjjI9qJwaZFQUq81s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214550381727-l0jv9395078blqjl4jmqqt3r85v6rf70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

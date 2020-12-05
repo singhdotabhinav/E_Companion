@@ -1,36 +1,22 @@
+import 'package:E_Companion/constants.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:intl/intl.dart';
 
 
-class MyApp extends StatelessWidget {
-  
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
 
-class MyHomePage extends StatefulWidget {
-MyHomePage({Key key, this.title}) : super(key: key);
+
+class ChatPage extends StatefulWidget {
+ChatPage({Key key, this.title}) : super(key: key);
 
 final String title;
 
 @override
-_MyHomePageState createState() => _MyHomePageState();
+_ChatPageState createState() => _ChatPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ChatPageState extends State<ChatPage> {
   void response(query) async {
     AuthGoogle authGoogle = await AuthGoogle(
         fileJson: "assets/service.json")
@@ -55,14 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-        
-          child: Text(
-            "E-Companion",
-          ),
-        ),
-      ),
+      backgroundColor: kPrimaryLightColor,
       body: Container(
         child: Column(
           children: <Widget>[
@@ -92,9 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
               child: ListTile(
 
-                  leading: IconButton(
-                    icon: Icon(Icons.camera_alt, color: Colors.greenAccent, size: 35,),
-                  ),
+                  // leading: IconButton(
+                  //   icon: Icon(Icons.camera_alt, color: Colors.greenAccent, size: 35,),
+                  // ),
 
                   title: Container(
                     height: 35,
@@ -134,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                         Icons.send,
                         size: 30.0,
-                        color: Colors.greenAccent,
+                        color: kPrimaryColor,
                       ),
                       onPressed: () {
 
