@@ -6,7 +6,8 @@ import 'package:firebase_core/firebase_core.dart';
 //import 'package:E_Companion/Screens/WelcomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
-
+//import 'lib\HomeScreen\Components\Courses\Course.dart';
+import 'package:E_Companion/HomeScreen/Components/Courses/Course.dart';
 
 
 
@@ -35,8 +36,10 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         scaffoldBackgroundColor: Colors.white,
       ),
-     home: WelcomeScreen(),
-     //home: HomeScreen(),
+     //home: WelcomeScreen(),
+     //home:Courses(),
+
+     home: HomeScreen(),
 
     );
   }

@@ -1,4 +1,4 @@
-import 'package:E_Companion/HomeScreen/Components/Course.dart';
+import 'package:E_Companion/HomeScreen/Components/Courses/Course.dart';
 import 'package:E_Companion/HomeScreen/Components/Quiz.dart';
 import 'package:E_Companion/HomeScreen/Components/chatWindow.dart';
 import 'package:E_Companion/HomeScreen/SideDrawer.dart';
@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
 
-  int _currentIndex=2;
+  int _currentIndex=0;
 
 
 
