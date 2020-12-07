@@ -19,8 +19,8 @@ class _CoursesState extends State<Courses> {
           child: Column(children: [
             
             SubjectCard("English","https://www.youtube.com/watch?v=tYPDolKfeZY&ab_channel=NoorChahal", MediaQuery.of(context).size.width),
-            //SubjectCard("Maths","https://www.youtube.com/watch?v=tYPDolKfeZY&ab_channel=NoorChahal", MediaQuery.of(context).size.width),
-            //SubjectCard("Science","https://www.youtube.com/watch?v=tYPDolKfeZY&ab_channel=NoorChahal",MediaQuery.of(context).size.width),
+            SubjectCard("Maths","https://www.youtube.com/watch?v=tYPDolKfeZY&ab_channel=NoorChahal", MediaQuery.of(context).size.width),
+            SubjectCard("Science","https://www.youtube.com/watch?v=tYPDolKfeZY&ab_channel=NoorChahal",MediaQuery.of(context).size.width),
           ]),
         ),
       ),
