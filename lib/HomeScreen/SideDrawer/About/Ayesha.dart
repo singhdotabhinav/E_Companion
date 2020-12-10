@@ -9,6 +9,21 @@ class Ayesha extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          elevation: 20,
+          backgroundColor: kPrimaryColor,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+          title: Container(
+            alignment: Alignment(0.0,0.0),
+            child: Text('E_Companion'),
+
+            ),
+        ),
         backgroundColor: kPrimaryLightColor,
         body: SafeArea(
           child: Column(

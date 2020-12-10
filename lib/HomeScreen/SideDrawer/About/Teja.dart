@@ -1,4 +1,3 @@
-
 import 'package:E_Companion/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -9,6 +8,21 @@ class Teja extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          elevation: 20,
+          backgroundColor: kPrimaryColor,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+          title: Container(
+            alignment: Alignment(0.0,0.0),
+            child: Text('E_Companion'),
+
+            ),
+        ),
         backgroundColor: kPrimaryLightColor,
         body: SafeArea(
           child: Column(
@@ -31,7 +45,6 @@ class Teja extends StatelessWidget {
               Text(
                 "Siddaganga Institute of Technology",
                 style: TextStyle(
-                  
                   color: kPrimaryColor,
                   fontSize: 22.0,
                 ),
@@ -39,7 +52,6 @@ class Teja extends StatelessWidget {
               Text(
                 "Tumakuru",
                 style: TextStyle(
-                  
                   fontSize: 22.0,
                   color: kPrimaryColor,
                 ),
@@ -48,7 +60,6 @@ class Teja extends StatelessWidget {
               Text(
                 "Flutter | C++ |  | SQL | ML | DataScience",
                 style: TextStyle(
-                  
                   fontSize: 20.0,
                   color: kPrimaryColor,
                 ),
@@ -93,7 +104,8 @@ class Teja extends StatelessWidget {
               ),
               InkWell(
                 onTap: () async {
-                  String url = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=abhinav.solanki.singh@gmail.com&tf=1';
+                  String url =
+                      'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=abhinav.solanki.singh@gmail.com&tf=1';
                   if (await canLaunch(url)) {
                     await launch(url);
                   } else {
@@ -108,11 +120,7 @@ class Teja extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        size: 30.0,
-                        color: kPrimaryColor
-                      ),
+                      Icon(Icons.email, size: 30.0, color: kPrimaryColor),
                       SizedBox(
                         width: 20.0,
                       ),
@@ -192,12 +200,10 @@ class Teja extends StatelessWidget {
                       ),
                       Text(
                         "Linkedin",
-                        
                         style: TextStyle(
                           fontSize: 20.0,
                           color: kPrimaryColor,
                           fontWeight: FontWeight.bold,
-                          
                         ),
                       ),
                     ],
@@ -295,5 +301,3 @@ class Teja extends StatelessWidget {
 //           throw 'Could not launch $url';
 //         }
 //       }
-
-
