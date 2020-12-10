@@ -1,4 +1,3 @@
-import 'package:E_Companion/HomeScreen/Components/Quiz/views/quiz_page.dart';
 import 'package:E_Companion/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -31,7 +30,7 @@ class Abhinav extends StatelessWidget {
               Text(
                 "Siddaganga Institute of Technology",
                 style: TextStyle(
-                  fontFamily: 'Merriweather',
+                  
                   color: kPrimaryColor,
                   fontSize: 22.0,
                 ),
@@ -39,7 +38,7 @@ class Abhinav extends StatelessWidget {
               Text(
                 "Tumakuru",
                 style: TextStyle(
-                  fontFamily: 'Merriweather',
+                  
                   fontSize: 22.0,
                   color: kPrimaryColor,
                 ),
@@ -48,7 +47,7 @@ class Abhinav extends StatelessWidget {
               Text(
                 "Flutter | C++ |  | SQL | ML | DataScience",
                 style: TextStyle(
-                  fontFamily: 'Merriweather',
+                  
                   fontSize: 20.0,
                   color: kPrimaryColor,
                 ),

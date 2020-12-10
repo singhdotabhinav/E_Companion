@@ -1,12 +1,12 @@
 import 'package:E_Companion/HomeScreen/Components/Quiz/views/quiz_page.dart';
 import 'package:E_Companion/HomeScreen/HomeScreen.dart';
-import 'package:E_Companion/HomeScreen/SideDrawer/About/About.dart';
+import 'package:E_Companion/HomeScreen/SideDrawer/About/Developers.dart';
 import 'package:E_Companion/Screens/Home/home_screen.dart';
 import 'package:E_Companion/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'About/About.dart';
+import 'About/Developers.dart';
 
 //final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
@@ -83,7 +83,7 @@ class SideDrawer extends StatelessWidget {
             onTap: (){
               print('Button pressed');
               //Navigator.push(context, MaterialPageRoute(builder: (context)=>About()));
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>About()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>Developers()));
             },
           ),
           ListTile(

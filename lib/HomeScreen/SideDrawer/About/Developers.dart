@@ -1,10 +1,15 @@
+import 'package:E_Companion/HomeScreen/SideDrawer/About/Ayesha.dart';
+import 'package:E_Companion/HomeScreen/SideDrawer/About/Gayana.dart';
+import 'package:E_Companion/HomeScreen/SideDrawer/About/Teja.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/services.dart';
 import 'package:flare_flutter/flare_actor.dart';
-import './Abhinav.dart';
-class About extends StatelessWidget {
+import 'Abhinav.dart';
+
+
+class Developers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
@@ -191,16 +196,21 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(21.0),
-                                    child: Card(
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50)),
-                                      elevation: 0,
-                                      child: CircleAvatar(
-                                        radius: 50,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: NetworkImage(
-                                            'https://i.imgur.com/8Th4Iry.jpg'),
+                                    child: InkWell(
+                                      onTap: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Teja()));
+                                      },
+                                                                          child: Card(
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50)),
+                                        elevation: 0,
+                                        child: CircleAvatar(
+                                          radius: 50,
+                                          backgroundColor: Colors.white,
+                                          backgroundImage: NetworkImage(
+                                              'https://i.imgur.com/8Th4Iry.jpg'),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -243,16 +253,19 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(21.0),
-                                    child: Card(
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50)),
-                                      elevation: 0,
-                                      child: CircleAvatar(
-                                        radius: 50,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: NetworkImage(
-                                            'https://i.imgur.com/QtYVyX4.jpg'),
+                                    child: InkWell(
+                                      onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Gayana()));},
+                                                                          child: Card(
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50)),
+                                        elevation: 0,
+                                        child: CircleAvatar(
+                                          radius: 50,
+                                          backgroundColor: Colors.white,
+                                          backgroundImage: NetworkImage(
+                                              'https://i.imgur.com/QtYVyX4.jpg'),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -290,16 +303,19 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(21.0),
-                                    child: Card(
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50)),
-                                      elevation: 0,
-                                      child: CircleAvatar(
-                                        radius: 50,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: NetworkImage(
-                                            'https://i.imgur.com/GBu1zxs.jpg'),
+                                    child: InkWell(
+                                      onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Ayesha()));},
+                                                                          child: Card(
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50)),
+                                        elevation: 0,
+                                        child: CircleAvatar(
+                                          radius: 50,
+                                          backgroundColor: Colors.white,
+                                          backgroundImage: NetworkImage(
+                                              'https://i.imgur.com/GBu1zxs.jpg'),
+                                        ),
                                       ),
                                     ),
                                   ),
