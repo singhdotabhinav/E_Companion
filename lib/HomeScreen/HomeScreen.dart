@@ -1,8 +1,8 @@
 import 'package:E_Companion/HomeScreen/Components/Courses/Course.dart';
-import 'package:E_Companion/HomeScreen/Components/Quiz.dart';
+//import 'package:E_Companion/HomeScreen/Components/Quiz.dart';
 import 'package:E_Companion/HomeScreen/Components/Quiz/views/homepage.dart';
 import 'package:E_Companion/HomeScreen/Components/chatWindow.dart';
-import 'package:E_Companion/HomeScreen/SideDrawer.dart';
+import 'package:E_Companion/HomeScreen/SideDrawer/SideDrawer.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:E_Companion/constants.dart';
