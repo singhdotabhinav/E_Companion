@@ -18,6 +18,7 @@ class Body extends StatefulWidget {
 }
 class _BodyState extends State<Body> {
   final _auth = FirebaseAuth.instance;
+
   String email;
   String password;
 

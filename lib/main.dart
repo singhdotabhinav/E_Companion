@@ -36,10 +36,10 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         scaffoldBackgroundColor: Colors.white,
       ),
-     //home: WelcomeScreen(),
+     home: WelcomeScreen(),
      //home:Courses(),
 
-     home: HomeScreen(),
+     //home: HomeScreen(),
 
     );
   }

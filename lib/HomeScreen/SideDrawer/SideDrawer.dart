@@ -2,6 +2,7 @@ import 'package:E_Companion/HomeScreen/Components/Quiz/views/quiz_page.dart';
 import 'package:E_Companion/HomeScreen/HomeScreen.dart';
 import 'package:E_Companion/HomeScreen/SideDrawer/About/Developers.dart';
 import 'package:E_Companion/Screens/Home/home_screen.dart';
+import 'package:E_Companion/Screens/Welcome/welcome_screen.dart';
 import 'package:E_Companion/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -9,13 +10,27 @@ import 'package:firebase_core/firebase_core.dart';
 import 'About/Developers.dart';
 
 //final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+//final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+
 final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  //final FirebaseUser user = await _firebaseAuth.currentUser();
+//final FirebaseUser user=  _firebaseAuth.currentUser();
 
 
 
 
 
 class SideDrawer extends StatelessWidget {
+
+
+  final _auth = FirebaseAuth.instance;
+  
+  
+  //final  _user = _auth.currentUser();
+   
+
+  
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -56,13 +71,6 @@ class SideDrawer extends StatelessWidget {
                       color: Colors.white
                     )
                   ),
-                  // Text(
-                  //   'Class 1',
-                  //   style: TextStyle(
-                  //     fontSize: 15,
-                  //     color: Colors.white
-                  //   )
-                  // )
                 ],
               ),
             ),
@@ -95,7 +103,11 @@ class SideDrawer extends StatelessWidget {
             leading:Icon(Icons.logout),
             title: Text('Logout',style: TextStyle(fontSize: 17.0),),
             onTap: (){
-              //Navigator.push(context, MaterialPageRoute(builder: (context)=>About()));
+              FirebaseAuth.instance
+              .signOut()
+              .then((value) => 
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>WelcomeScreen()))
+              );
             },
           )
         ],
